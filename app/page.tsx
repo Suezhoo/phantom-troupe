@@ -2,14 +2,14 @@ import Image from "next/image";
 import HeroCarousel, { type Hero } from "./components/HeroCarousel";
 
 const image = (fileName: string) =>
-  `https://deadlock.wiki/Special:Redirect/file/${fileName}_card.png`;
+  `/heroes/${fileName}.webp`;
 
 const heroes: Hero[] = [
   {
     name: "Lady Geist",
     title: "The Crimson Debt",
     description: "An occultist who turns every sacrifice into leverage.",
-    imageSrc: image("Lady_Geist"),
+    imageSrc: image("lady-geist"),
     joinedAt: "09 Nov 2025",
     buildId: "PT-029-G3",
     role: "Mystic",
@@ -20,7 +20,7 @@ const heroes: Hero[] = [
     title: "The Empty Road",
     description:
       "A patient hunter who stalks those foolish enough to stand alone.",
-    imageSrc: image("Drifter"),
+    imageSrc: image("drifter"),
     joinedAt: "18 Nov 2025",
     buildId: "PT-033-D8",
     role: "Assassin",
@@ -30,7 +30,7 @@ const heroes: Hero[] = [
     name: "Warden",
     title: "The Long Arm",
     description: "An unyielding pursuer who makes escape a temporary illusion.",
-    imageSrc: image("Warden"),
+    imageSrc: image("warden"),
     joinedAt: "26 Nov 2025",
     buildId: "PT-038-W2",
     role: "Brawler",
@@ -40,7 +40,7 @@ const heroes: Hero[] = [
     name: "Victor",
     title: "The Returned",
     description: "A brutal creation whose final breath is rarely his last.",
-    imageSrc: image("Victor"),
+    imageSrc: image("victor"),
     joinedAt: "04 Dec 2025",
     buildId: "PT-041-V8",
     role: "Brawler",
@@ -50,7 +50,7 @@ const heroes: Hero[] = [
     name: "Holliday",
     title: "The High Noon",
     description: "A fearless gunslinger who bends every skirmish to her tempo.",
-    imageSrc: image("Holliday"),
+    imageSrc: image("holliday"),
     joinedAt: "12 Dec 2025",
     buildId: "PT-046-H5",
     role: "Marksman",
@@ -61,7 +61,7 @@ const heroes: Hero[] = [
     title: "The Threshold",
     description:
       "A courteous mystery who ensures every door leads somewhere dangerous.",
-    imageSrc: image("The_Doorman"),
+    imageSrc: image("the-doorman"),
     joinedAt: "19 Dec 2025",
     buildId: "PT-051-D1",
     role: "Mystic",
@@ -72,7 +72,7 @@ const heroes: Hero[] = [
     title: "The Veiled Hand",
     description:
       "An elusive assassin who strikes before her presence is known.",
-    imageSrc: image("Haze"),
+    imageSrc: image("haze"),
     joinedAt: "07 Jan 2026",
     buildId: "PT-056-H6",
     role: "Assassin",
@@ -83,7 +83,7 @@ const heroes: Hero[] = [
     title: "The Ninth Life",
     description:
       "A graceful predator who deals in curses, claws, and clean escapes.",
-    imageSrc: image("Calico"),
+    imageSrc: image("calico"),
     joinedAt: "16 Jan 2026",
     buildId: "PT-061-C3",
     role: "Assassin",
@@ -93,11 +93,22 @@ const heroes: Hero[] = [
     name: "Wraith",
     title: "The House Edge",
     description: "A calculating operator who never plays without loaded odds.",
-    imageSrc: image("Wraith"),
+    imageSrc: image("wraith"),
     joinedAt: "28 Jan 2026",
     buildId: "PT-068-W2",
     role: "Marksman",
     specialty: "Weapon Damage",
+  },
+  {
+    name: "Silver",
+    title: "The Hot Mess",
+    description:
+      "A relentless hunter who trades measured gunfire for feral violence.",
+    imageSrc: image("silver"),
+    joinedAt: "08 Feb 2026",
+    buildId: "PT-073-S7",
+    role: "Marksman",
+    specialty: "Lycanthropy",
   },
 ];
 
